@@ -1,0 +1,27 @@
+#general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 40%;
+    padding-bottom: 20px;
+}
+
+#seleccionar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

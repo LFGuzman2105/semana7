@@ -1,0 +1,44 @@
+#conversion {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 40%;
+    padding-bottom: 20px;
+}
+
+.divColumna {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,9 @@
+<mat-form-field>
+    <mat-label>Personaje</mat-label>
+    <mat-select [(ngModel)]="seleccionado" required>
+        @for (personaje of personajes; track personajes) {
+            <mat-option [value]="personaje">{{personaje.getNombre()}}</mat-option>
+        }
+    </mat-select>
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="mostrar()">MOSTRAR</button>

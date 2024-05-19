@@ -1,0 +1,24 @@
+<div id="conversion" class="divColumna">
+    <app-formulario-conversion (agregarConversion)="agregarConversion($event)"></app-formulario-conversion>
+    <div id="tabla">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Celcius</th>
+                    <th>Farenheit</th>
+                    <th>&nbsp;</th>
+                </tr>
+                @for (temperatura of temperaturas; track temperatura.getCelcius()) {
+                    <tr>
+                        <td>{{temperatura.getCelcius()}}</td>
+                        <td>{{temperatura.getFarenheit()}}</td>
+                        <td class="delete"><mat-icon aria-hidden="false" aria-label="" fontIcon="delete" (click)="eliminarConversion(temperatura)">
+                        </mat-icon></td>
+                    </tr>
+                }
+                @empty {
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

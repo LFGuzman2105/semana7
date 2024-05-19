@@ -1,0 +1,23 @@
+<h2>CONVERSIÓN</h2>
+<div id="formulario">
+    <form class="">
+        <div>
+            <mat-form-field>
+                <mat-label>Grados</mat-label>
+                <input type="number" matInput placeholder="0" name="numero" [(ngModel)]="numero" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Tipo</mat-label>
+                <mat-select name="tipo" [(ngModel)]="tipo" required>
+                    <mat-option value="celcius">Celcius</mat-option>
+                    <mat-option value="farenheit">Farenheit</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="boton">
+            <button mat-raised-button color="primary" (click)="agregar()">GRABAR</button>
+        </div>
+    </form>
+</div>
